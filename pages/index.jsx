@@ -13,6 +13,7 @@ export default function Home() {
     addGame("devon", "john", "john")
   }
 
+
   return (
     <div className={styles.container}>
       <button onClick={createGame}>Add</button>
