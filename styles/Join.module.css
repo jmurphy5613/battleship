@@ -1,0 +1,43 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(18, 19, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.name {
+    margin-bottom: 1.5rem;
+    height: 2.5rem;
+    width: 10rem;
+    border: none;
+    padding-left: 1rem;
+    border-radius: 1rem;
+}
+.name:focus {
+    outline: none;
+}
+
+.code {
+    margin-bottom: 1.5rem;
+    height: 2.5rem;
+    width: 10rem;
+    border: none;
+    padding-left: 1rem;
+    border-radius: 1rem;
+}
+.code:focus {
+    outline: none;
+}
+
+.join {
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
