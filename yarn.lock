@@ -17,13 +17,6 @@
   dependencies:
     regenerator-runtime "^0.13.10"
 
-"@convex-dev/common@0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@convex-dev/common/-/common-0.3.1.tgz#f3ec9b7d8e7babb6a75d42c08d33af5c3497742d"
-  integrity sha512-LGKQLSR9uEND42HEL4W8xo6Sp/W0ytsrx3Vk0zIBXr1jgiDiK4Ot6wz9eQikf/NFWd04/20/x1er/UGG6Ck66A==
-  dependencies:
-    base64-js "^1.5.1"
-
 "@esbuild/linux-loong64@0.14.54":
   version "0.14.54"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.14.54.tgz#de2a4be678bd4d0d1ffbb86e6de779cde5999028"
@@ -422,12 +415,11 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
 
-convex@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/convex/-/convex-0.3.1.tgz#9916f01fb5291d3662391f7ad9efd67646c574da"
-  integrity sha512-HD9qOhMSXVwPaytXWJUEYsU2yHsQyaS8l82WuL0xgAy3NnOMl6+LhgMP2zWjDHy9OCXIeLoeVb63ba7/RFn1Hg==
+convex@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/convex/-/convex-0.5.0.tgz#1f288d2f852f93f816fd1ed0788f58a1eebe09cc"
+  integrity sha512-T+ybKIw/1XNy1ZCLRTxgSv25TH9W9zIm8hdr5zRTk5bfmsDFAFaCn4owWb+uY76odmcHCG8ftrLVDO6ndxVcWw==
   dependencies:
-    "@convex-dev/common" "0.3.1"
     base64-js "^1.5.1"
     encoding "^0.1.13"
     esbuild "^0.14.16"

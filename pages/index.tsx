@@ -2,10 +2,12 @@ import styles from '../styles/Home.module.css'
 import { useQuery, useMutation } from '../convex/_generated/react'
 import { create5digitCode } from '../utils/random-code'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 
 export default function Home() {
 
-  const games = useQuery("allGames") || []
+  const router = useRouter()
+
   const addGame = useMutation("addGame")
 
   const [code, setCode] = useState<string>('')
@@ -27,6 +29,9 @@ export default function Home() {
         createGame()
       }}>Create Code</button>
       {code != '' ? <h2 className={styles.code}>{code}</h2> : <h2>Create a code!</h2>}
+      <button onClick={() => {
+        router.push(`/game/${code}?name=${name}`)
+      }}>Join</button>
     </div>
   )
 }
