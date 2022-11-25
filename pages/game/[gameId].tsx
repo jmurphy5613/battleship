@@ -25,7 +25,8 @@ const Game = () => {
 
     const getNewTurn = () => {
         if(!game) return
-        
+        if(game[0].currentTurn === game[0].playerOne) return game[0].playerTwo
+        return game[0].playerOne
     }
 
     const isCurrentUsersTurn = (player:string) => {
@@ -47,10 +48,10 @@ const Game = () => {
             const currentBoard = board
             currentBoard[index] = 'x'
             if(isPlayerOneOrTwo() === 1) {
-                editGame(game[0].playerOne, game[0].playerTwo, game[0].currentTurn, currentBoard, game[0].playerTwoBoard, game[0].isOver, code, game[0]._id)
+                editGame(game[0].playerOne, game[0].playerTwo, getNewTurn(), currentBoard, game[0].playerTwoBoard, game[0].isOver, code, game[0]._id)
             }
             else {
-                editGame(game[0].playerOne, game[0].playerTwo, game[0].currentTurn, game[0].playerOneBoard, currentBoard, game[0].isOver, code, game[0]._id)
+                editGame(game[0].playerOne, game[0].playerTwo, getNewTurn(), game[0].playerOneBoard, currentBoard, game[0].isOver, code, game[0]._id)
             }
         }
     }
