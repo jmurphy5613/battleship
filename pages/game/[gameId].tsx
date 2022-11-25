@@ -2,6 +2,7 @@ import styles from '../../styles/Game.module.css'
 import { useRouter } from 'next/router'
 import { useQuery } from '../../convex/_generated/react'
 import { useEffect, useState } from 'react'
+import BoardDisplay from '../../components/game-room/BoardDisplay/BoardDisplay'
 
 const Game = () => {
 
@@ -27,6 +28,16 @@ const Game = () => {
     return (
         <div className={styles.container}>
             <h1>{game[0].code}</h1>
+            <div className={styles.boards}>
+                <div className={styles.left}>
+
+                    <BoardDisplay board={game[0].playerOneBoard}  />
+                </div>
+                <div className={styles.right}>
+
+                    <BoardDisplay board={game[0].playerTwoBoard} />
+                </div>
+            </div>
         </div>
     )
 }

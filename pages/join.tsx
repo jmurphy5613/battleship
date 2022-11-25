@@ -17,7 +17,7 @@ const Join = () => {
 
     const handleJoin = () => {
         if(!joinedGame) return
-        editGame(joinedGame[0].playerOne, name, joinedGame[0].currentTurn, joinedGame[0].board, joinedGame[0].isOver, joinedGame[0].code, joinedGame[0]._id)
+        editGame(joinedGame[0].playerOne, name, joinedGame[0].currentTurn, joinedGame[0].playerOneBoard, joinedGame[0].playerTwoBoard, joinedGame[0].isOver, joinedGame[0].code, joinedGame[0]._id)
         router.push({
             pathname: `/game/${code}`,
             query: { name: name },

@@ -1,0 +1,20 @@
+.grid {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.grid-item {
+    border: 1px solid #0070f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    margin: 0;
+    font-size: 1rem;
+    color: red;
+}
