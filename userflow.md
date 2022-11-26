@@ -1,0 +1,1 @@
+Create rooom --> join the game --> select character --> place ships --> ready up

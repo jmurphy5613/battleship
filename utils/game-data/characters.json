@@ -1,0 +1,14 @@
+{ 
+    "characters": [
+        {
+            "name": "John",
+            "description": "Mega gamer, has been to several continents, and went fishing once.",
+            "image": ""
+        },
+        {
+            "name": "Maya",
+            "description": "Gets about 10 minutes of sunlight per week. Has never left the confines of Havertown",
+            "image": ""
+        }
+    ]
+}

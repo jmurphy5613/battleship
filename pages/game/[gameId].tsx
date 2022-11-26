@@ -4,10 +4,13 @@ import { useMutation, useQuery } from '../../convex/_generated/react'
 import { useEffect, useState } from 'react'
 import BoardDisplay from '../../components/game-room/BoardDisplay/BoardDisplay'
 import PlayerTitles from '../../components/game-room/PlayerTitles/PlayerTitles'
+import CharacterSelect from '../../components/pre-game/CharacterSelect/CharacterSelect'
 
 const Game = () => {
 
     const router = useRouter()
+
+    const [selectedCharacter, setSelectedCharacter] = useState<string>()
 
     const [code, setCode] = useState<string>('')
     const [playerName, setPlayerName] = useState<string>('')
@@ -67,6 +70,12 @@ const Game = () => {
     }, [router.isReady])
 
     if(!game) return <div></div>
+
+    if(!selectedCharacter) {
+        return (
+            <CharacterSelect setSelectedCharacter={setSelectedCharacter} />
+        )
+    }
 
     return (
         <div className={styles.container}>
